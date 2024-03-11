@@ -1,0 +1,36 @@
+.product{
+    width: 300px;
+    height: 500px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(216, 233, 248);
+}
+
+.img-wrapper{
+    width: 200px;
+    height: 250px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.title, .price{
+    font-size: 25px;
+}
+
+.buy-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buyBtn{
+    width: 100px;
+    cursor: pointer;
+}

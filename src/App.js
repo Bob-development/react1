@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header, Footer, Navigation, Product } from "./components";
+
+import { products } from "./utils/Products";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header>
+        <Navigation></Navigation>
+      </Header>
+
+      <div className="App">
+        {
+          products.map(product => (
+            <Product title={product.title} description={product.description} price={product.price} />
+          ))
+        }
+      </div>
+
+      <Footer>
+        <Navigation></Navigation>
+      </Footer>
+    </>
   );
 }
 

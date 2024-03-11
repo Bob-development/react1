@@ -1,0 +1,13 @@
+.navigation{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    text-decoration: none; 
+    color: inherit
+}
+
+.link{
+    text-decoration: none; 
+    color: inherit
+}
